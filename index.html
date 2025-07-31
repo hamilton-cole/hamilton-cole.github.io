@@ -1,0 +1,135 @@
+Here’s the updated index.html with a darker green palette—no neon in sight:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary: #0D3B2E;   /* deep forest green */
+      --accent:  #1F7A1F;   /* rich emerald green */
+      --bg:      #f0f5f1;   /* very light mint */
+      --text:    #333;
+      --spacing: 1rem;
+      font-family: 'Inter', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--bg); color: var(--text); line-height: 1.6; }
+    header, nav, main, footer { width: 90%; max-width: 960px; margin: auto; padding: var(--spacing) 0; }
+    nav { display: flex; justify-content: space-between; align-items: center; }
+    nav a { margin-left: var(--spacing); text-decoration: none; color: var(--primary); font-weight: 600; }
+    nav a:hover { color: var(--accent); }
+    .hero { text-align: center; padding: 4rem 0; }
+    .hero h1 { font-size: 2.5rem; color: var(--primary); }
+    .hero p { font-size: 1.2rem; margin-top: 0.5rem; }
+    .social-links a { margin: 0 .5rem; color: var(--primary); font-size: 1.5rem; }
+    .social-links a:hover { color: var(--accent); }
+    section { margin-top: 3rem; }
+    .projects { display: flex; flex-wrap: wrap; gap: var(--spacing); }
+    .project-card {
+      background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex: 1 1 calc(50% - var(--spacing)); padding: var(--spacing);
+      transition: transform 0.2s ease;
+    }
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card img { width: 100%; border-radius: 4px; }
+    .project-card h3 { margin: var(--spacing) 0 0.5rem; color: var(--primary); }
+    .project-card a { color: var(--accent); text-decoration: none; font-weight: 500; }
+    .skills-list { list-style: none; display: flex; flex-wrap: wrap; gap: var(--spacing); }
+    .skills-list li {
+      background: #fff; padding: 0.5rem 1rem; border-radius: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      font-size: 0.9rem;
+    }
+    footer { text-align: center; font-size: 0.9rem; margin: 4rem 0 2rem; color: #777; }
+    footer a { color: var(--primary); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+    @media (max-width: 600px) {
+      .project-card { flex: 1 1 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <a href="#">YourName</a>
+    </div>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Your Name</h1>
+    <p>Full-Stack Developer ● Open Source Enthusiast ● Tech Storyteller</p>
+    <div class="social-links">
+      <a href="https://github.com/yourusername" aria-label="GitHub">🐙</a>
+      <a href="https://linkedin.com/in/yourusername" aria-label="LinkedIn">🔗</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Right now, I’m focused on building responsive full-stack web applications.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="path/to/screenshot1.png" alt="Project One screenshot" />
+          <h3>Project One</h3>
+          <p>A brief description of what this project does and why it’s awesome.</p>
+          <a href="https://github.com/yourusername/project-one">View on GitHub →</a>
+        </div>
+        <div class="project-card">
+          <img src="path/to/screenshot2.png" alt="Project Two screenshot" />
+          <h3>Project Two</h3>
+          <p>A summary of features, tech stack, and your role in building this project.</p>
+          <a href="https://github.com/yourusername/project-two">View on GitHub →</a>
+        </div>
+        <!-- Add more project cards here -->
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Technologies</h2>
+      <ul class="skills-list">
+        <li>JavaScript (ES6+)</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>Docker</li>
+        <li>SQL & NoSQL</li>
+        <!-- Add more -->
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Got a project in mind or just want to say hi?  
+        <a href="mailto:youremail@example.com">Email me →</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Your Name ·  
+    <a href="https://github.com/yourusername">GitHub</a> ·
+    <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+  </footer>
+
+</body>
+</html>
+
+
